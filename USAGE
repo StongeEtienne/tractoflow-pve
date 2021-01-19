@@ -4,7 +4,7 @@ TractoFlow pipeline
 Run TractoFlow adapted for PVE map pipeline
 
 USAGE
-nextflow run main.nf [OPTIONAL_ARGUMENTS] (--root AND --profile)
+nextflow run main.nf [OPTIONAL_ARGUMENTS] (--root AND -profile)
 
 PROFILE
 You need to chose a profile with "-profile chosen_profile" for PVE maps (in addition to tractoflow inputs)
@@ -65,6 +65,8 @@ OPTIONAL ARGUMENTS (current value)
 --use_slice_drop_correction                 If set, will use the slice drop correction option from Eddy ($use_slice_drop_correction).
 
 --bet_dwi_final_f                           Fractional Intensity threshold for the final DWI BET ($bet_dwi_final_f).
+
+--run_ants_warp_t1                          Run ANTs warp to bring T1 in diffusion space
 
 --fa_mask_threshold                         FA threshold to compute WM mask for normalization ($fa_mask_threshold).
 
